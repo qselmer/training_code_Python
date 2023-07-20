@@ -1,26 +1,44 @@
+rm(list = ls()); gc(reset = T)
+# -------------------------------------------------------------------------
 # Crear vectores y matrices
-vector_numerico <- c(1, 2, 3, 4, 5)
-vector_caracteres <- c("rojo", "verde", "azul")
-
+vector_numerico <- 1:5
+vector_caracteres <- c("red", "green", "blue")
 matriz <- matrix(1:12, nrow = 3, ncol = 4)
 
 # Acceder a elementos de un vector o matriz mediante índices lógicos
 indices <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
 elementos_seleccionados <- vector_numerico[indices]
-filas_seleccionadas <- matriz[c(TRUE, FALSE, TRUE), ]  # Seleccionar filas 1 y 3
+
+filas_seleccionadas <- matriz[c(FALSE, FALSE, TRUE), 
+  c(TRUE, FALSE, FALSE, FALSE)]  
+
+# Seleccionar filas 1 y 3
 
 # Operaciones con vectores y matrices
 suma_acumulada <- cumsum(vector_numerico)  # Suma acumulada
 producto_acumulado <- cumprod(vector_numerico)  # Producto acumulado
 
 # Usando la función "apply" para aplicar una función a filas o columnas de una matriz
+
 suma_filas <- apply(matriz, 1, sum)  # Suma de elementos por filas
 producto_columnas <- apply(matriz, 2, prod)  # Producto de elementos por columnas
 
 # Ordenar un vector o una matriz
 vector_ordenado <- sort(vector_numerico)  # Ordenar de menor a mayor
 matriz_ordenada_filas <- matriz[order(matriz[, 1]), ]  # Ordenar filas por la primera columna
+5:10
 
+seq(from = 1, 
+  to = 1, 
+  by = ((to - from)/(length.out - 1)),
+  length.out = NULL, along.with = NULL, ...)
+
+vec <- seq(5, 10, length.out = 10)
+r <- vec[2]-vec[1]
+seq(5, 10, by = r)
+seq(5, 10, by = 2)
+
+runif()
 # Filtrar elementos de un vector o una matriz
 elementos_mayores_3 <- vector_numerico[vector_numerico > 3]
 elementos_pares <- vector_numerico[vector_numerico %% 2 == 0]
