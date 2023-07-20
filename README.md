@@ -1,24 +1,24 @@
-# training_dperp
+<p align="left">
+<strong><a href="R/README.md">R</a></strong>\|
+<strong><a href="Python/README.md">Python</a></strong>\|
+<strong><a href="Julia/README.md">Julia</a></strong>\|
+</p>
 
-├── README.md/README.Rmd   : Description of this repository
-├── jjm_sprfmo_assessment.Rproj : RStudio project file
-├── .gitignore             : Files and directories to be ignored by git
-│
-├── data_preparation
-│   ├── code                : +++
-│   ├── input_data          : +++
-│   └── raw_data            : +++
-|
-├── arc
-│
-├── R                       : All codes
-│
-├── inputs                  : +++
-│
-├── config                  : +++ 
-│
-├── results                 : +++
-│
-├── docs                    : +++
-│
-└── src                     : Repository exe
+## Directory structure
+
+    ├── README.md/README.Rmd   : Description of this repository
+    ├── .gitignore             : Files and directories to be ignored by git
+    │
+    ├── Training
+    │
+    ├── R                       : All codes
+    │
+    ├── Python                  : +++
+    │
+    ├── C++                     : +++ 
+    │
+    ├── Julia                   : +++
+    │
+    └── outputs                 : Repository exe
+
+-   [qselmer@gmail.com](https://github.com/qselmer)

@@ -1,6 +1,30 @@
+#<------------------------------->
+# class 1.1: vectors&            #               
+#<------------------------------->
+#qselmer@gmail.com
+
 # Crear vectores
-vector_numerico <- c(1, 2, 3, 4, 5)
+vector_numerico <- c(n1 = 1, n2 = 2, 3, 4, 5)
+hasName(vector_numerico, "n1")
+
 vector_caracteres <- c("rojo", "verde", "azul")
+# vector_caracteres <- "rojo"+ "verde"+ "azul"
+
+nombre <- "init"
+x <- 1:10
+x = 1:10
+assign(nombre,4:5)
+
+# types
+ls()
+attr(x,"dim") <- c(2, 5)
+mode(x)
+class(x)
+typeof(x)
+get("x")
+get("match")
+var1 <-var2 <- x
+exists("var1")
 
 # Acceder a elementos de un vector
 primer_elemento <- vector_numerico[1]
@@ -12,6 +36,7 @@ multiplicacion_vectores <- vector_numerico * 2
 
 # Crear matrices
 matriz <- matrix(1:12, nrow = 3, ncol = 4)
+
 # También se puede crear una matriz mediante la función "cbind" o "rbind" para unir vectores
 
 # Acceder a elementos de una matriz
