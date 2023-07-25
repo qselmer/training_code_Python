@@ -55,6 +55,28 @@ dimnames(mat) <- list(2010:2014, seq(10, 19, length.out = 10))
 
 marks <- 10:19
 
-plot(marks, mat[1, ], type = "l", lwd = 3, col = "darkgreen")
+par(mfrow = c(5, 1), mar = c(0,0,0,0), oma = c(2,2,2,2))
+juv = 14 
+for(t in 1:5){
+  plot(marks, mat[t, ], type = "n", lwd = 3, col = "darkgreen", ylab = "Freq", 
+       xlab = "LT(cm)")
+  grid()
+  lines(marks, mat[t, ], type = "b", pch = 16, cex = 2)
+  abline(v = 14, lty = 2, col = 2)
+  juvlab = (sum(mat[t, which(marks < 14)])/sum(mat[t, ] ))*100
+  juvlab = round(juvlab, 2)
+  mtext(side = 3, text = paste0("Juv = ", juvlab, "%"), line = -3, adj = 0.05,
+        cex = 1.5, col = "red")
+  mtext(side = 3, text = rownames(mat)[t], line = -5, adj = 0.05,
+        cex = 1.5, col = "blue")
+  
+  if(rownames(mat)[t] == "2012"){
+    mtext(side = 3, text = rownames(mat)[t], line = -5, adj = 0.05,
+          cex = 1.5, col = "green")
+  }
+  
+  print(t)
+}
+
 
 
