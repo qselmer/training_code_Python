@@ -6,22 +6,22 @@ rm(list = ls())
 
 # -------------------------------------------------------------------------
 vec <- 3:76
-veC <- "REPLICA"
+vec <- "REPLICA"
+# concatenar (valor numerico, valor caracter, valor logico)
+c(3:6, "re", FALSE) # si corres valores diferentes R lo corre como caracteres.
 
-c(3:6, "re", FALSE)
+# Crear vectores con nombres 
+vector_numerico <- c(n1 = 1, n2 = 2, n3 = 3, 4, 5)
 
-# Crear vectores
-vector_numerico <- c(n1 = 1, n2 = 2, 3, 4, 5)
 hasName(vector_numerico, "n1")
 class(vector_numerico)
 
-vector_caracteres <- c("rojo", "verde", "azul")
+vector_caracteres <- c("red", "green", "blue")
 # vector_caracteres <- "rojo"+ "verde"+ "azul"
 class(vector_caracteres)
 
 vector_log <- c(TRUE, FALSE, FALSE)
 class(vector_log)
-
 
 vector_fac <- c(1:3)
 class(vector_fac)
@@ -35,10 +35,13 @@ x <- 1:10
 y = 1:10
 assign(nombre,4:5)
 assign("valor3", 40:80)
+# un punto antes de cualquier variable es para ocultar en R.
 .valor2 <- 67
+# se usa la función print para llamar al valor oculto 
 print(.valor2)
-
+# R no permite asignar variables que empiece con números o guión. 
 1e4r <- 50
+# Sí puedo asignar variables con números con la función assing.
 assign("1e4r", 50)
 
 # types
@@ -47,15 +50,16 @@ ls()
 mode(x)
 class(x)
 typeof(x)
-get("x")
+get("x") # te arroja el valor de las variables
 x
 get("match")
 var1 <-var2 <- x
-exists( "y")
+exists( "y") # para corroborar si existe la variable en mi envioronment.
 
 vector_numerico <- 1:50
-# Acceder a elementos de un vector
-primer_elemento <- vector_numerico[13]
+# Acceder a elementos de un vector /// seleccionar un elemento del vector. 
+primer_elemento <- vector_numerico[1]
+varios_elemento <- vector_numerico[3:15]
 segundo_elemento <- vector_caracteres[2]
 
 vector_let <- letters
