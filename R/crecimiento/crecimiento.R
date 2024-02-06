@@ -2,7 +2,7 @@ getwd()
 dir()
 dir.create("inputs"); dir.create("outputs")
 #hola mundo 2324
-tallas <- seq(10, by = 2, length.out = 10)
+tallas <- seq(10, by = 2, length.out = 10) #Frecuencia de tallas
 
 tl <- NULL
 for(y in 1:10){
