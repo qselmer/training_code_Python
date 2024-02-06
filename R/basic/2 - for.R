@@ -1,4 +1,4 @@
-seq(0, 1, length.out = 11)
+seq(0, 1, length.out = 11) #Secuencia de 0 a 1
 seq(stats::rnorm(20)) # effectively 'along'
 seq(1, 9, by = 2)     # matches 'end'
 seq(1, 9, by = pi)    # stays below 'end'
