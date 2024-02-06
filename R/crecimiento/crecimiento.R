@@ -1,7 +1,7 @@
 getwd()
 dir()
 dir.create("inputs"); dir.create("outputs")
-#hola mundo
+#hola mundo 2323
 tallas <- seq(10, by = 2, length.out = 10)
 
 tl <- NULL
