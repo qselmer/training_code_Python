@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 │
 ├── 1-Python Fundamentals for Marine Data Science
 │
-├── 
+├── 2-Python Descriptive Statistics
 │
 ├── 
 │
