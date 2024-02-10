@@ -1,0 +1,38 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r, setup, include = FALSE}
+knitr::opts_knit$set(root.dir = here::here())
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  tidy=TRUE,
+  comment = "#>")
+```
+
+<p align="left">
+<strong><a href="1-Python Fundamentals for Marine Data Science/README.md"></a>Python Fundamentals for Marine Data Science</strong>
+</p>
+
+## Directory structure
+
+```         
+├── README.md/README.Rmd   : Description of this repository
+├── .gitignore             : Files and directories to be ignored by git
+│
+├── Training
+│
+├── R                       : All codes
+│
+├── Python                  : +++
+│
+├── C++                     : +++ 
+│
+├── Julia                   : +++
+│
+└── outputs                 : Repository exe
+```
+
+-   [qselmer\@gmail.com](https://github.com/qselmer)
